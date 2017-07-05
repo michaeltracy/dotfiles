@@ -1,0 +1,21 @@
+[user]
+	name = Michael Tracy
+[alias]
+	#graphlog = log --graph --oneline --decorate
+	graphlog = log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	hedgehog = log --graph --oneline --decorate master..HEAD
+	hh = log --graph --oneline --decorate master..HEAD
+	cmend = commit --amend -C HEAD
+	hup = push origin HEAD
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+[help]
+	autocorrect = 12
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+[url "file://"]
+	insteadOf = git+file://

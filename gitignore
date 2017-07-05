@@ -1,0 +1,9 @@
+*~
+.*.swp
+.*.swo
+npm-debug.log
+
+# Don't track my settings
+.jshintrc
+.vimrc
+.tern-project
