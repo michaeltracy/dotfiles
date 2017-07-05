@@ -11,6 +11,9 @@
 	tool = vimdiff
 [mergetool]
 	keepBackup = false
+[core]
+	autocrlf = input
+	excludesfile = /Users/mtracy/.gitignore
 [help]
 	autocorrect = 12
 [rebase]
