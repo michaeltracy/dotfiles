@@ -1,6 +1,13 @@
+[color]
+	ui = true
 [user]
 	name = Michael Tracy
-	email = mtracy@sonobi.com
+	email = slightlycuban@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[diff "odf"]
+	textconv=odt2txt
 [alias]
 	#graphlog = log --graph --oneline --decorate
 	graphlog = log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -10,13 +17,14 @@
 	hup = push origin HEAD
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
 	co = checkout
+[push]
+	default = matching
+[diff]
+	tool = vimdiff
 [merge]
 	tool = vimdiff
 [mergetool]
 	keepBackup = false
-[core]
-	autocrlf = input
-	excludesfile = ~/.gitignore
 [help]
 	autocorrect = 12
 [rebase]
