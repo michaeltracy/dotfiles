@@ -8,6 +8,8 @@
 	hh = log --graph --oneline --decorate master..HEAD
 	cmend = commit --amend -C HEAD
 	hup = push origin HEAD
+	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
+	co = checkout
 [merge]
 	tool = vimdiff
 [mergetool]
