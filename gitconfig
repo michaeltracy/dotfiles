@@ -16,6 +16,7 @@
 	cmend = commit --amend -C HEAD
 	hup = push origin HEAD
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
+	first = rev-list --max-parents=0 HEAD
 	co = checkout
 [push]
 	default = matching
