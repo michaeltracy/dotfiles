@@ -16,7 +16,7 @@
 	keepBackup = false
 [core]
 	autocrlf = input
-	excludesfile = /Users/mtracy/.gitignore
+	excludesfile = ~/.gitignore
 [help]
 	autocorrect = 12
 [rebase]
