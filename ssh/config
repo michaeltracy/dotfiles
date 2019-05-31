@@ -1,0 +1,19 @@
+Host *
+    # Use ControlMaster/ControlPath to reuse connections
+    ControlMaster auto
+    ControlPath ~/.ssh/control-%h-%p-%r
+    # Forward ssh agent to reuse in-memory keys
+    ForwardAgent yes
+    Compression yes
+
+Host *.i.do.not.care.about.keys
+    # Auto-accept keys; we'll be connecting to random machines often
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+
+Host *.i.need.a.bastion
+    # Run all connections through the bastion
+    # OpenSSH 5.4 version of ProxyCommand
+    ProxyCommand ssh csa-bastion1 -W %h:%p
+    # Older, netcat version of ProxyCommand
+    #ProxyCommand ssh csa-bastion1 nc %h %p 2> /dev/null
