@@ -30,3 +30,6 @@ export PATH="/usr/local/sbin:$PATH"
 #function wallpaper() {
 #    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
 #}
+
+# Docker aliases
+alias denv='docker run -it --rm -v $PWD:$PWD -w $PWD'
