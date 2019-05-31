@@ -6,6 +6,11 @@ if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
   source "$(brew --prefix)/etc/bash_completion"
 fi
 
+# Set up virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 # I don't like having duplicates in my history
 HISTCONTROL=erasedups
 
