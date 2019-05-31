@@ -24,6 +24,7 @@ PATH=$HOME/bin:$PATH
 # Aliases and whatnot
 alias ls="gls --color=auto"
 alias grep="grep --color=auto"
+alias tar="gtar"
 export PATH="/usr/local/sbin:$PATH"
 
 #   Update all Wallpapers
