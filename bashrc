@@ -15,8 +15,8 @@ fi
 HISTCONTROL=erasedups
 
 # And the git in the prompt
-GIT_PS1_SHOWDIRTYSTATE=true
-PS1='\h:\W \u $(__git_ps1 "(%s)")\$ '
+#GIT_PS1_SHOWDIRTYSTATE=true
+#PS1='\h:\W \u $(__git_ps1 "(%s)")\$ '
 
 # Prepend our bin to PATH
 PATH=$HOME/bin:$PATH
