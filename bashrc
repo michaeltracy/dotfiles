@@ -27,6 +27,6 @@ alias grep="grep --color=auto"
 export PATH="/usr/local/sbin:$PATH"
 
 #   Update all Wallpapers
-function wallpaper() {
-    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
-}
+#function wallpaper() {
+#    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
+#}
