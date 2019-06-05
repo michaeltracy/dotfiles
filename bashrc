@@ -1,5 +1,7 @@
-export NVM_DIR="/Users/mtracy/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+    source "$NVM_DIR/nvm.sh"  # This loads nvm
+fi
 
 # Set up bash completion
 if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
