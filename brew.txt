@@ -1,6 +1,7 @@
 bash-completion
 coreutils
 git
+reattach-to-user-namespace
 shellcheck
 the_silver_searcher
 tmux
