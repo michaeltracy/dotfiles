@@ -1,0 +1,7 @@
+bash-completion
+coreutils
+git
+shellcheck
+the_silver_searcher
+tmux
+vim
