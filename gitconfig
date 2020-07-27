@@ -18,6 +18,7 @@
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
 	first = rev-list --max-parents=0 HEAD
 	co = checkout
+	ci = commit
 [push]
 	default = matching
 [diff]
