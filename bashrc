@@ -123,6 +123,7 @@ fi
 
 # Prepend our bin to PATH
 PATH=$HOME/bin:$PATH
+PATH=$PATH:$HOME/.local/bin
 
 # Docker aliases
 alias denv='docker run -it --rm -v $PWD:$PWD -w $PWD'
