@@ -127,3 +127,5 @@ PATH=$PATH:$HOME/.local/bin
 
 # Docker aliases
 alias denv='docker run -it --rm -v $PWD:$PWD -w $PWD'
+
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$(__git_ps1)\$ "
