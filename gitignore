@@ -45,6 +45,10 @@ Thumbs.db
 .*.swo
 .DS_Store
 
+# Project config settings #
+###########################
+.idea/
+
 # Don't track my settings
 .jshintrc
 .vimrc
