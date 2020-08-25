@@ -2,10 +2,9 @@
 .*.swp
 .*.swo
 .DS_Store
-npm-debug.log
+*.log
 
 # Don't track my settings
-.jshintrc
 .vimrc
 .tern-project
 .vscode/
