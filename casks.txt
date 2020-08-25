@@ -1,0 +1,5 @@
+font-consolas-for-powerline
+font-inconsolata-g-for-powerline
+font-menlo-for-powerline
+font-meslo-for-powerline
+font-powerline-symbols
