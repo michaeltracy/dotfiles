@@ -7,3 +7,6 @@ the_silver_searcher
 tmux
 vim
 svn
+oath-tools
+zbar
+watch
