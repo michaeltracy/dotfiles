@@ -10,3 +10,4 @@ svn
 oath-tools
 zbar
 watch
+ctags
