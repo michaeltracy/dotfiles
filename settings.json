@@ -6,5 +6,6 @@
         "source.fixAll.eslint": true
     },
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.fontFamily": "Inconsolata-g for Powerline"
+    "terminal.integrated.fontFamily": "Inconsolata-g for Powerline",
+    "workbench.editor.enablePreview": false
 }
