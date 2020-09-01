@@ -25,16 +25,16 @@ PS1='\h:\W \u $(__git_ps1 "(%s)")\$ '
 # Prepend our bin to PATH
 PATH=$HOME/bin:$PATH
 
-# Aliases and whatnot
-alias ls="gls --color=auto"
-alias grep="grep --color=auto"
-alias tar="gtar"
+# Set up alias folder
+if [ -d ~/.bash_alias.d ]; then
+    for alas in ~/.bash_alias.d/*; do
+        source "$alas"
+    done
+fi
+
 export PATH="/usr/local/sbin:$PATH"
 
 #   Update all Wallpapers
 #function wallpaper() {
 #    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
 #}
-
-# Docker aliases
-alias denv='docker run -it --rm -v $PWD:$PWD -w $PWD'
