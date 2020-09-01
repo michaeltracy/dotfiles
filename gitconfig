@@ -10,6 +10,7 @@
 	hup = push origin HEAD
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
 	co = checkout
+	ci = commit
 [merge]
 	tool = vimdiff
 [mergetool]
