@@ -7,7 +7,7 @@
 	hedgehog = log --graph --oneline --decorate master..HEAD
 	hh = log --graph --oneline --decorate master..HEAD
 	cmend = commit --amend -C HEAD
-	hup = push origin HEAD
+	hup = push -u origin HEAD
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
 	co = checkout
 	ci = commit
