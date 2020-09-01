@@ -26,3 +26,5 @@
 	enabled = true
 [url "file://"]
 	insteadOf = git+file://
+[pull]
+	rebase = true
