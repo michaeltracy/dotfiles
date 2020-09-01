@@ -1,0 +1,10 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Solarized Dark",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontFamily": "Inconsolata-g for Powerline"
+}
