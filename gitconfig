@@ -1,6 +1,5 @@
 [user]
 	name = Michael Tracy
-	email = mtracy@sonobi.com
 [alias]
 	#graphlog = log --graph --oneline --decorate
 	graphlog = log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
