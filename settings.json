@@ -7,5 +7,10 @@
     },
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontFamily": "Inconsolata-g for Powerline",
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    }
 }
