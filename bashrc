@@ -27,8 +27,16 @@ PATH=$HOME/bin:$PATH
 
 # Set up alias folder
 if [ -d ~/.bash_alias.d ]; then
-    for alas in ~/.bash_alias.d/*; do
+    for alas in ~/.bash_alias.d/*.sh; do
         source "$alas"
+    done
+fi
+
+# Set up a folder to hold onto various env vars;
+# some projects/tools require specific things to be set.
+if [ -d ~/.profile.d ]; then
+    for profile in ~/.profile.d/*.sh; do
+        source "$profile"
     done
 fi
 
