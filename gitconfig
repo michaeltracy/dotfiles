@@ -2,7 +2,6 @@
 	ui = true
 [user]
 	name = Michael Tracy
-	email = slightlycuban@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
