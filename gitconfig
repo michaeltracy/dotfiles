@@ -10,6 +10,7 @@
 	instashare = daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose
 	co = checkout
 	ci = commit
+	refresh = "!sh -c 'git fetch origin $1:$1' -"
 [merge]
 	tool = vimdiff
 [mergetool]
