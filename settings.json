@@ -3,7 +3,8 @@
     "workbench.colorTheme": "Solarized Dark",
     "eslint.format.enable": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "source.fixAll.tslint": true
     },
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontFamily": "Inconsolata-g for Powerline",
