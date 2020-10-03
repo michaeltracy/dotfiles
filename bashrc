@@ -95,31 +95,15 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
+# Set up a folder to hold onto various env vars;
+# some projects/tools require specific things to be set.
+if [ -d ~/.profile.d ]; then
+    for profile in ~/.profile.d/*.sh; do
+        source "$profile"
+    done
 fi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export $(gnome-keyring-daemon --daemonize --start)
-
-export NVM_DIR="$HOME/.nvm"
-if [ -s "$NVM_DIR/nvm.sh" ]; then
-    source "$NVM_DIR/nvm.sh"  # This loads nvm
-    source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-fi
-
-# Set up bash completion
-if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-  source "$(brew --prefix)/etc/bash_completion"
-fi
-
-# Set up virtualenvwrapper
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-  source /usr/local/bin/virtualenvwrapper.sh
-fi
 
 # Prepend our bin to PATH
 PATH=$HOME/bin:$PATH
