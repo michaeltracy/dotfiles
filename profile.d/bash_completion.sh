@@ -5,7 +5,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Set up bash completion
-if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-  source "$(brew --prefix)/etc/bash_completion"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # Set up bash completion
+    if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+        source "$(brew --prefix)/etc/bash_completion"
+    fi
 fi
