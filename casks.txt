@@ -1,3 +1,5 @@
+firefox
+vlc
 font-consolas-for-powerline
 font-inconsolata-g-for-powerline
 font-menlo-for-powerline
