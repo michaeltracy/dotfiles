@@ -12,3 +12,4 @@ oath-tools
 zbar
 watch
 ctags
+jq
