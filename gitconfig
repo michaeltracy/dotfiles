@@ -11,7 +11,7 @@
 	co = checkout
 	ci = commit
 	refresh = "!sh -c 'git fetch origin $1:$1' -"
-	remaster = "!sh -c 'git fetch origin $1:$1 && git rebase master' -"
+	remaster = "!sh -c 'git fetch origin master:master && git rebase master' -"
 [merge]
 	tool = vimdiff
 [mergetool]
