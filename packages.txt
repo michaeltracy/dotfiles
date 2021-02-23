@@ -1,0 +1,4 @@
+tmux
+rsync
+vim
+git
