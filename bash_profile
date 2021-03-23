@@ -1,12 +1,15 @@
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+if [ -x "$(command -v brew)" ]; then
+  BREW_PREFIX="$(brew --prefix)"
 fi
-#export GIT_PS1_SHOWDIRTYSTATE=true
-#export PS1='\h:\W \u$(__git_ps1)\$ '
-#export PS1='[\u@mbp \w$(__git_ps1)]\$ '
 
-if [ -f $HOME/.bashrc ]; then
-    . $HOME/.bashrc
+if [ -f "$BREW_PREFIX/etc/bash_completion" ]; then
+  source "$BREW_PREFIX/etc/bash_completion"
+fi
+
+if [ -f "$BREW_PREFIX/etc/bash_completion.d/git-completion.bash" ]; then
+  source "$BREW_PREFIX/etc/bash_completion.d/git-completion.bash"
+fi
+
+if [ -f "$HOME/.bashrc" ]; then
+  source "$HOME/.bashrc"
 fi
