@@ -13,3 +13,4 @@ zbar
 watch
 ctags
 jq
+gnu-tar
