@@ -3,3 +3,4 @@ rsync
 vim
 git
 curl
+mosh
