@@ -4,3 +4,5 @@ vim
 git
 curl
 mosh
+jq
+yamllint
