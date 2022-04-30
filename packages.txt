@@ -8,3 +8,4 @@ jq
 yamllint
 python3-venv
 xsel
+exa
