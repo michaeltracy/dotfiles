@@ -34,3 +34,5 @@
 	enabled = true
 [url "file://"]
 	insteadOf = git+file://
+[init]
+	defaultBranch = master
