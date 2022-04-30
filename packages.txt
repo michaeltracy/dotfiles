@@ -6,3 +6,5 @@ curl
 mosh
 jq
 yamllint
+python3-venv
+xsel
